@@ -9,6 +9,10 @@ if (input is not missing value and length of input is less than 250) then
 				key code numbers_key_codes's item (char + 1)
 			else if (id of char = 46) then -- dot
 				key code 47
+			else if (id of char = 47) then -- this is a /
+				key code 44
+			else if (id of char = 45) then -- this is a -
+				key code 27
 			else -- everything else
 				keystroke char
 			end if
