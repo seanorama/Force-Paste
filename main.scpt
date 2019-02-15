@@ -5,11 +5,13 @@ set input to the clipboard
 if (input is not missing value and length of input is less than 250) then
 	tell application "System Events"
 		repeat with char in the characters of input
-			try
+			if (char ≥ 0 and char ≤ 9) then -- numbers
 				key code numbers_key_codes's item (char + 1)
-			on error
+			else if (id of char = 46) then -- dot
+				key code 47
+			else -- everything else
 				keystroke char
-			end try
+			end if
 			delay 0.01
 		end repeat
 	end tell
