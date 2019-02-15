@@ -10,6 +10,7 @@ if (input is not missing value and length of input is less than 250) then
 			on error
 				keystroke char
 			end try
+			delay 0.01
 		end repeat
 	end tell
 end if
