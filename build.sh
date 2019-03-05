@@ -3,7 +3,7 @@ APP_NAME="Force Paste.app"
 INFO_PLIST="$APP_NAME/Contents/Info.plist"
 
 rm -rf "$APP_NAME"
-osacompile -o "$APP_NAME" -x "main.scpt"
+osacompile -o "$APP_NAME" -l JavaScript -x "main.scpt"
 /usr/libexec/PlistBuddy -c "Add NSUIElement String 1" "$INFO_PLIST"
 /usr/libexec/PlistBuddy -c "Set CFBundleIconFile icon" "$INFO_PLIST"
 /usr/libexec/PlistBuddy -c "Add CFBundleVersion String 101" "$INFO_PLIST"
