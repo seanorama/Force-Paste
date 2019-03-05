@@ -7,7 +7,7 @@ osacompile -o "$APP_NAME" -x "main.scpt"
 /usr/libexec/PlistBuddy -c "Add NSUIElement String 1" "$INFO_PLIST"
 /usr/libexec/PlistBuddy -c "Set CFBundleIconFile icon" "$INFO_PLIST"
 /usr/libexec/PlistBuddy -c "Add CFBundleVersion String 101" "$INFO_PLIST"
-/usr/libexec/PlistBuddy -c "Add CFBundleShortVersionString String 1.0.1" "$INFO_PLIST"
+/usr/libexec/PlistBuddy -c "Add CFBundleShortVersionString String sa-1.0.4" "$INFO_PLIST"
 /usr/libexec/PlistBuddy -c "Add NSHumanReadableCopyright String '© 2019 https://github.com/superawesome/Force-Paste/'" "$INFO_PLIST"
 
 rm -f "$APP_NAME/Contents/Resources/applet.icns"
